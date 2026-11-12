@@ -200,7 +200,7 @@ h2{font-size:clamp(30px,4vw,44px);
 .posts h3{font-size:22px;font-weight:400;padding-bottom:8px;border-bottom:1px dotted var(--ink);margin:10px 0}
 .posts p{font-size:11px;opacity:.7}.more{font-size:11px;display:inline-block;margin-top:10px}
 
-/* reservation */
+
 .res,.resbox{padding:90px 24px;text-align:center}
 .rform{max-width:1160px;margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr);gap:20px 22px}
 .rform .btn{grid-column:1/-1;justify-self:center;margin-top:30px}
@@ -210,7 +210,6 @@ input,select{font:inherit;font-size:13px;padding:15px 18px;border:1px solid var(
 .rform.full .btn.w2{justify-self:center;width:auto}
 .resbox{padding-top:80px}
 
-/* cats + quote */
 .cat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
 .cat-grid a{aspect-ratio:1/1.35;background:linear-gradient(rgba(0,0,0,.05),rgba(0,0,0,.05)),var(--i) center/cover;padding:16px}
 .cat-grid b{font-family:var(--serif);font-size:20px;font-weight:600;color:var(--ink)}
@@ -218,13 +217,12 @@ blockquote{margin-top:80px;max-width:760px;font-family:var(--serif);font-size:22
 blockquote p{font-size:19px;line-height:1.5}
 .who{display:flex;align-items:center;gap:14px;margin-top:30px;font-size:14px}.who img{width:60px;height:60px;border-radius:50%}
 
-/* menu */
+
 .msec{padding-bottom:30px}
 .split{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
 .split img{width:100%;aspect-ratio:1/1.1;object-fit:cover}
 .split.flip img{order:2}
 
-/* about + contact */
 .story{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
 .story h2{text-align:left;margin-bottom:18px}.story p{font-size:12px;max-width:44ch}
 .story .big{font-family:var(--serif);font-size:18px;font-weight:600;line-height:1.7;max-width:30ch;margin-left:auto}
@@ -241,7 +239,7 @@ blockquote p{font-size:19px;line-height:1.5}
 .step h3{font-size:30px;margin-bottom:12px}.step p{font-size:12px;max-width:44ch}
 .step:nth-of-type(odd) img{order:0}.step:nth-of-type(even) img{order:2}
 
-/* portfolio */
+
 .tabs{display:flex;flex-wrap:wrap;justify-content:center;gap:12px 28px;margin-bottom:36px}
 .tabs button{background:none;border:0;border-bottom:1px dotted transparent;font:inherit;font-size:16px;cursor:pointer;padding:2px 0}
 .tabs button.on{border-color:var(--ink)}
@@ -253,7 +251,7 @@ blockquote p{font-size:19px;line-height:1.5}
 .empty{text-align:center;padding:40px}
 .loadmore{display:block;margin:50px auto 0;font-family:var(--sans);font-size:11px;padding:6px 18px;cursor:default}
 
-/* footer */
+
 .foot{background:var(--green);color:#fff;padding:80px 5vw 30px}
 .fgrid{display:grid;grid-template-columns:1fr 1.4fr 2.4fr;gap:40px;align-items:center;padding-bottom:70px}
 .flogo{font-family:var(--serif);font-size:32px;line-height:1.2}
