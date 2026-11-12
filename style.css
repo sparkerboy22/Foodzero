@@ -261,7 +261,7 @@ blockquote p{font-size:19px;line-height:1.5}
 .news small{font-size:9px;opacity:.7;display:block;margin-top:10px}
 .fbar{display:flex;justify-content:space-between;font-size:11px;padding-top:26px;border-top:1px dotted rgba(255,255,255,.5)}
 
-/* responsive */
+
 @media(max-width:900px){
   .burger{display:flex}.tel{display:none}.nav .btn.ghost{margin-left:0}
   .links{display:none;position:absolute;top:100%;left:5vw;right:5vw;flex-direction:column;gap:14px;padding:22px;background:var(--green);margin:0}
