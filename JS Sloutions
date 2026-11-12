@@ -1,0 +1,159 @@
+Problem 01: Sum of Natural Numbers
+একটি সংখ্যা N দেওয়া থাকবে। 1 থেকে N পর্যন্ত সব সংখ্যার যোগফল বের করতে হবে।
+
+let N = 10;
+let sum = 0;
+
+for (let i = 1; i <= N; i++) {
+    sum = sum + i;
+}
+
+console.log("Sum:", sum);
+
+Problem 02: Find Even and Odd Numbers
+একটি Array দেওয়া থাকবে। Array থেকে কতটি Even Number এবং কতটি Odd Number আছে তা বের করতে হবে।
+
+let numbers = [10, 15, 20, 25, 30, 35, 40];
+
+let even = 0;
+let odd = 0;
+
+for (let i = 0; i < numbers.length; i++) {
+
+    if (numbers[i] % 2 === 0) {
+        even++;
+    } else {
+        odd++;
+    }
+}
+
+console.log("Even Numbers:", even);
+console.log("Odd Numbers:", odd);
+
+Problem 03: Factorial of a Number
+একটি সংখ্যা দেওয়া থাকবে। Loop ব্যবহার করে সেই সংখ্যার Factorial বের করতে হবে।
+
+let N = 5;
+let factorial = 1;
+
+for (let i = 1; i <= N; i++) {
+    factorial = factorial * i;
+}
+
+console.log("Factorial:", factorial);
+
+Problem 04: Find Prime Number
+একটি সংখ্যা Prime Number কি না তা যাচাই করার জন্য একটি Function তৈরি করতে হবে।
+
+function isPrime(number) {
+
+    if (number <= 1) {
+        return false;
+    }
+
+    for (let i = 2; i < number; i++) {
+
+        if (number % i === 0) {
+            return false;
+        }
+    }
+
+    return true;
+}
+
+console.log(isPrime(7));
+console.log(isPrime(10));
+
+Problem 05: Multiplication Table
+একটি সংখ্যা দেওয়া থাকবে। সেই সংখ্যার ১ থেকে ১০ পর্যন্ত Multiplication Table প্রিন্ট করতে হবে।
+
+let number = 5;
+
+for (let i = 1; i <= 10; i++) {
+
+    console.log(number + " x " + i + " = " + (number * i));
+
+}
+
+Problem 06: Reverse a String
+একটি String দেওয়া থাকবে। কোনো built-in reverse() method ব্যবহার না করে Loop দিয়ে String-টি উল্টো করে প্রিন্ট করতে হবে।
+
+let text = "JavaScript";
+let reversed = "";
+
+for (let i = text.length - 1; i >= 0; i--) {
+
+    reversed = reversed + text[i];
+
+}
+
+console.log("Reversed:", reversed);
+
+Problem 07: Find the Largest Number in Array
+একটি Array দেওয়া থাকবে। Loop ব্যবহার করে Array থেকে সবচেয়ে বড় সংখ্যাটি বের করতে হবে।
+
+let numbers = [10, 50, 30, 90, 20, 70];
+
+let largest = numbers[0];
+
+for (let i = 1; i < numbers.length; i++) {
+
+    if (numbers[i] > largest) {
+        largest = numbers[i];
+    }
+
+}
+
+console.log("Largest Number:", largest);
+
+Problem 08: Find Square of a Number
+একটি Function তৈরি করতে হবে, যেখানে একটি সংখ্যা Parameter হিসেবে নেওয়া হবে এবং সেই সংখ্যার Square Return করবে।
+
+function square(number) {
+
+    return number * number;
+
+}
+
+console.log(square(5));
+console.log(square(8));
+
+Problem 09: Positive, Negative or Zero
+একটি সংখ্যা দেওয়া থাকবে। if-else ব্যবহার করে সংখ্যাটি Positive, Negative নাকি Zero তা নির্ণয় করতে হবে।
+
+  let number = -5;
+
+if (number > 0) {
+
+    console.log("Positive Number");
+
+} else if (number < 0) {
+
+    console.log("Negative Number");
+
+} else {
+
+    console.log("Zero");
+
+}
+
+Problem 10: Check Eligibility for Voting
+একটি Function তৈরি করতে হবে, যেখানে একজন ব্যক্তির বয়স Parameter হিসেবে নেওয়া হবে। যদি বয়স ১৮ বা তার বেশি হয়, তাহলে সে ভোট দেওয়ার যোগ্য। অন্যথায় যোগ্য নয়।
+
+function checkVotingEligibility(age) {
+
+    if (age >= 18) {
+
+        return "Eligible for Voting";
+
+    } else {
+
+        return "Not Eligible for Voting";
+
+    }
+
+}
+
+console.log(checkVotingEligibility(20));
+console.log(checkVotingEligibility(15));
+
