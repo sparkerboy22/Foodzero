@@ -202,7 +202,7 @@ document.querySelector('.burger').onclick=function(){
 };
 document.querySelectorAll('.res').forEach(r=>r.append(document.getElementById('resT').content.cloneNode(true)));
 function book(e){e.preventDefault();alert('Thank you! Your table request has been received.');e.target.reset();return false}
-// portfolio filter
+
 const cards=[...document.querySelectorAll('.pc')];
 document.querySelector('.tabs').onclick=e=>{
   const b=e.target.closest('button'); if(!b) return;
